@@ -1,0 +1,57 @@
+.adminLogin-container{
+    padding:20px;
+    width:40%;
+    margin: auto;
+    border:1px solid black;
+    background-color:rgb(252, 247, 243); /*#FAFAD2, 	#F0FFF0,#F0FFFF, #FAEBD7, #F0F8FF*/
+    align-items: center;
+}
+
+.adminLogin-container label{
+    display:block;
+    padding: 0 0 5px 2px;
+    cursor: pointer;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.8);
+    font-size: 15px;  
+}
+
+.adminLogin-container input[type=text],
+.adminLogin-container input[type=submit],
+.adminLogin-container input[type=password],
+.adminLogin-container label[for=showPassword]{
+    display:inline-block;
+    padding: 0 0 5px 2px;
+    cursor: pointer;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.8);
+    font-size: 15px;  
+    border-radius:10px;
+}
+
+.adminLogin-container input[type=checkbox]{
+    display:block;}
+
+
+.adminLogin-container input[type=submit]{
+    padding:10px;
+    border-radius:10px;
+    color:white;
+    border-color:#2196F3;
+    background-color: #2196F3;
+}
+
+.adminLogin-container #usernameError,
+.adminLogin-container #passwordError{
+    color:red;
+    display: inline-block;
+
+}
+
+.adminLogin-container input[type=submit]{
+    margin-left:10%;
+    display:block;
+}
+
+.adminLogin-container .error_mark{
+    color:red;
+
+}

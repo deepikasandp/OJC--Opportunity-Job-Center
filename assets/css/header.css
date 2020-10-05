@@ -1,0 +1,18 @@
+.header{
+    text-align: center;
+    padding:10px;
+    background-color: #778899;
+    border-bottom: 1px solid #EBE6E2;
+}
+.header h2{
+    color:white;
+    font-size: 22px; 
+    text-transform: uppercase;
+}
+
+.header p{
+    color:white;
+    font-size: 18px; 
+    text-transform: initial;
+    text-align: center;
+}

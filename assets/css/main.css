@@ -1,0 +1,9 @@
+.main,
+body{
+    margin:0;
+    padding:0;    
+    background-color:#FAF0E6;
+    width:100vw;
+    height:100vh;
+    font-family: 'Roboto', sans-serif, monospace;
+}

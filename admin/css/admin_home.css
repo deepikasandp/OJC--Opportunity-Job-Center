@@ -1,0 +1,142 @@
+.admin-home{
+    display: grid;
+    grid-template-columns: 5% 15% auto 5%;
+    padding: 10px 10px 0px 10px;
+    width:100%;
+}
+
+.admin-home .button{
+    padding:10px;
+    border-radius:10px;
+    color:white;
+    border-color:#2196F3;
+    background-color: #2196F3;
+    margin:10px;
+}
+
+.admin-home .options{
+    grid-column-start: 2; 
+    grid-column-end: 3;
+    border:1px solid white;
+    background-color:rgb(220, 238, 238); /*#FAFAD2, 	#F0FFF0,#F0FFFF, #FAEBD7, #F0F8FF*/
+    display: block;
+    padding:10px;
+    text-align: center;
+    width:100%;
+}
+
+.admin-home .option{
+    width:70%;
+}
+
+.admin-home .content{
+    grid-column-start: 3; 
+    grid-column-end: 4;
+    border:1px solid white;
+    width:100%;
+    padding:10px;
+    background-color:rgb(166, 199, 199); /*#FAFAD2, 	#F0FFF0,#F0FFFF, #FAEBD7, #F0F8FF*/
+    overflow:auto;
+}
+
+.admin-home .content #displayUserTable,
+.admin-home .content #displayRTable,
+.admin-home .content #displayJSTable{   
+    width:90%;    
+}
+
+.admin-home .options .option{
+    padding:10px;
+    border-radius:10px;
+    color:white;
+    border-color:#2196F3;
+    background-color: #2196F3;
+    margin:10px;
+    align-items: center;
+}
+
+.admin-home .options .set{
+    border-color:black;
+    background-color: black;
+}
+
+.admin-home .content .nodisplay{
+    display:none;
+}
+
+.admin-home .content .display{
+    display:block;
+}
+
+.admin-home .content #showRContent .del_btn,
+.admin-home .content #showJSContent .del_btn{
+    color:red;
+}
+
+.admin-home .content #showRContent .edit_btn,
+.admin-home .content #showJSContent .edit_btn{
+    color:green;
+}
+
+.admin-home .content #moreDetails h4,
+.admin-home .content #moreActions h4
+{
+    text-decoration: underline;
+}
+
+.admin-home .content #moreDetails table,
+.admin-home .content #moreActions table,
+.admin-home .content #moreProfileActions table,
+.admin-home .content #moreDetails h4,
+.admin-home .content #moreActions h4,
+.admin-home .content #moreProfileActions h4
+{
+    margin-left: 10%;
+}
+
+.admin-home .content #moreDetails table,
+.admin-home .content #moreDetails table th,
+.admin-home .content #moreDetails table td,
+.admin-home .content #moreActions table,
+.admin-home .content #moreActions table th,
+.admin-home .content #moreActions table td,
+.admin-home .content #moreProfileActions table,
+.admin-home .content #moreProfileActions table th,
+.admin-home .content #moreProfileActions table td  {
+    border : 1px solid black;
+    border-collapse: collapse;    
+}
+  
+.admin-home .content #moreDetails table th,
+.admin-home .content #moreDetails table td,
+.admin-home .content #moreActions table th,
+.admin-home .content #moreActions table td,
+.admin-home .content #moreProfileActions table th,
+.admin-home .content #moreProfileActions table td {
+    padding: 8px;
+    text-align: left;
+}
+
+@media screen and (max-width: 567px) 
+{
+    .admin-home{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        width:100%;
+    }
+    .admin-home .options{
+        grid-column-start: 1; 
+        grid-column-end: 2;
+        grid-row-start: 1; 
+        grid-row-end: 2;
+        width:100%;
+    }
+    .admin-home .content{
+        grid-column-start: 1; 
+        grid-column-end: 2;
+        grid-row-start: 2; 
+        grid-row-end: 3;
+        width:100%;
+    }
+}

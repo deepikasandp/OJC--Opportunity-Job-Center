@@ -1,0 +1,73 @@
+.menu {
+  background-color: #6f6f6f;
+  overflow: hidden;
+  position: relative;
+  border-bottom: 1px solid #EBE6E2;
+  font-family: 'Roboto', sans-serif, monospace;
+  padding-top: 12px;
+}
+
+.menu .menu-right {
+  float: right;
+}
+
+.menu a{
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 8px 12px;
+  text-decoration: none;
+  font-size: 1.3em;
+  /*animation*/
+}
+
+.menu a:hover,
+.menu a.active {
+  background: #333; 
+  border-radius: 1em;
+  /*animation*/
+ 
+}
+
+.menu .icon {
+  display: none;
+}
+
+.menu-logo img {
+  width: 10%;
+}
+
+.menu-logo {
+  display: flex;
+}
+
+@media screen and (max-width: 567px) {
+  .menu .menu-right a {
+    display: none;
+    float: none;
+  }
+
+  .menu .menu-right {
+    float: none;
+  }
+
+  .menu a.icon {
+    display: block;
+    float: right;
+  }
+
+  /* to make it responsive */
+  .menu.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .menu.responsive a {
+    display: block;
+    float: none;
+    text-align: left;
+    font-size: 14px;
+  }
+
+}

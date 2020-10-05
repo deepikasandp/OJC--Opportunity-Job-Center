@@ -1,0 +1,45 @@
+
+.mail-form label{
+    display: block;
+    padding: 0 0 5px 2px;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.8);
+    font-size: 15px;        
+}
+
+.mail-form label[for=showPassword],
+.mail-form label[for=r_showPassword]{
+    display: inline-block;
+}
+
+.mail-form input[type=checkbox] {
+    vertical-align: middle;
+}
+
+.mail-form input[type=text],
+.mail-form input[type=password] {
+    width: 80%;
+    display: inline-block;
+    padding: 5px;
+    border: 3px solid #ebe6e2;
+    border-radius: 10px;       
+    font-size: 13px;
+}
+
+.mail-form input[type=text]:hover,
+.mail-form input[type=password]:hover {
+    border-color: #CCC;
+}
+
+.mail-form input[type=text]:focus,
+.mail-form input[type=password]:focus {
+     outline: none; 
+}
+
+.mail-form input[type=submit]{
+    width:30%;       
+    margin-left: 30%;
+    border-color:#2196F3;
+    background-color: #2196F3;
+}

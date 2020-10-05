@@ -1,0 +1,47 @@
+.footerMenu {
+    background-color: #6f6f6f;
+    overflow: hidden;
+    position: fixed;
+    bottom:0px;
+    width:100%;
+    text-align: center;
+    padding:15px;        
+    border-top: 1px solid #EBE6E2;
+    margin:0px;
+    font-family: 'Roboto' , sans-serif, monospace;
+}
+
+.footerMenu a{
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1.4em;
+}
+
+.footerMenu a:hover,
+.footerMenu a.active {
+    background: #333;
+}    
+
+@media screen and (max-width: 567px) {
+    .footerMenu {
+        position: fixed;
+        bottom:0;
+    }
+    .footerMenu a{
+        padding: 4px 4px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footerMenu {
+        position: fixed;
+        bottom:0;
+    }
+    .footerMenu a{
+        padding: 4px 4px;
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,308 @@
+.r-home-container{
+    display:grid;
+    grid-template-columns: 5% 15% auto 5%;
+    font-family: 'Roboto' , sans-serif, monospace;
+    background-color:#FAF0E6;
+    width:100%;
+    height:100%;
+}
+
+.r-home-container .menu-item
+{
+    grid-column-start: 2; 
+    grid-column-end: 3;
+    padding:20px;  
+    border-right: 1px solid #EBE6E2;
+    background-color:	#e2d3d1;
+    text-align: center;
+    width:100%;
+}
+
+.r-home-container .menu-item .menu-button{
+    color: white;
+    padding: 8px;
+    width:90%;
+    background-color: #6f6f6f;
+    background-color: #6f6f6f;
+    height: auto;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    text-align: center;
+    font-weight: bold;
+    margin:20px 0px;
+    text-transform: uppercase;
+}
+
+.r-home-container .menu-item .menu-button:hover {
+    background-color: #000000;
+    border-color:#000000;
+}
+
+.r-home-container .menu-item .menu-button:focus {
+    outline: none; 
+} 
+
+.r-home-container .menu-item .active{
+    background-color: #000000;
+    border:#000000;
+}
+
+.r-home-container .r-vacancy-form-item,
+.r-home-container .r-view-vacancies-item{
+    grid-column-start: 3; 
+    grid-column-end: 4;
+    width:100%;
+    padding:5px; 
+    background-color:rgb(247, 234, 210);
+}
+
+/*Multiple form*/
+/* Style the form */
+.r-home-container .r-vacancy-form-item .vacancyForm-container {
+    box-shadow: -1px 3px 23px -8px rgba(0, 0, 0, 0.75),-2px 3px 23px -8px rgba(0,0,0,0.75);
+    background-color:rgb(247, 234, 210);
+    margin: auto;
+    padding: 40px;
+    width: 50%;
+}
+
+.r-home-container .r-view-vacancies-item .view-container{
+    width:100%;
+    padding:10px;
+    margin: auto;
+    overflow:hidden;    
+    box-shadow: -1px 3px 23px -8px rgba(0, 0, 0, 0.75),-2px 3px 23px -8px rgba(0,0,0,0.75);    
+}
+
+.r-home-container .r-view-vacancies-item .view-container #viewJobsTable .offer:hover,
+.r-home-container .r-view-vacancies-item .view-container #viewJobsTable .candidate:hover,
+.r-home-container .r-view-vacancies-item .view-container #viewJobsTable .moreDetails:hover{
+    background-color: #666;
+    color: white;
+}
+
+.r-home-container .r-vacancy-form-item .show,
+.r-home-container .r-view-vacancies-item .show{
+    display:block;
+}
+
+.r-home-container .r-vacancy-form-item .hide,
+.r-home-container .r-view-vacancy-form-item .hide{
+    display:none;
+}
+
+.r-home-container .r-vacancy-form-item h2,
+.r-home-container .r-view-vacancies-item h2{    
+    font-size: 18px;           
+    text-transform: uppercase;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.8);
+    text-align: center;
+}
+
+.r-home-container .r-vacancy-form-item .vacancyForm-container h4,
+.r-home-container .r-view-vacancies-item h4{
+    display: inline-block;
+    font-size: 15px;           
+    text-transform: uppercase;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.8);
+    text-align: center;    
+    border-bottom: 3px solid steelblue; 
+}
+
+.r-home-container .r-view-vacancies-item a{
+    display:inline-block;
+    text-decoration: none;
+    color:#800080;
+    font-size: 15px;
+    cursor: pointer;        
+    text-transform: initial;
+}
+
+.r-home-container .r-vacancy-form-item .vacancyForm-container .skills-instruction{
+    padding: 8px;
+    font-size: 10px;
+}
+
+/* Mark input boxes that gets an error on validation: */
+.r-home-container .r-vacancy-form-item .vacancyForm-container input.invalid {
+    background-color: rgb(224, 193, 193);
+}
+.r-home-container .r-vacancy-form-item .vacancyForm-container select.invalid{
+    background-color: rgb(224, 193, 193);
+}
+.r-home-container .r-vacancy-form-item .vacancyForm-container textarea.invalid{
+    background-color: rgb(224, 193, 193);
+}
+
+/* Hide all steps by default: */
+.r-home-container .r-vacancy-form-item .vacancyForm-container .tab {
+    display: none;
+}
+  
+/* Make circles that indicate the steps of the form: */
+.r-home-container .r-vacancy-form-item .vacancyForm-container .section5 .step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+}
+  
+/* Mark the active step: */
+.r-home-container .r-vacancy-form-item .vacancyForm-container .section5 .step.active {
+    opacity: 1;
+}
+  
+  /* Mark the steps that are finished and valid: */
+  .r-home-container .r-vacancy-form-item .vacancyForm-container .section5 .step.finish {
+    background-color: #4CAF50;
+}
+
+.r-home-container .r-vacancy-form-item .vacancyForm-container input[type=text],
+.r-home-container .r-vacancy-form-item .vacancyForm-container select,
+.r-home-container .r-vacancy-form-item .vacancyForm-container textarea{
+    width: 90%;
+    padding: 5px;
+    border: 3px solid #ebe6e2;
+    border-radius: 10px;       
+    font-size: 14px;
+}
+.r-home-container .r-vacancy-form-item .vacancyForm-container select{
+    cursor: pointer;
+}
+
+.r-home-container .r-vacancy-form-item .vacancyForm-container input[type=text]:hover,
+.r-home-container .r-vacancy-form-item .vacancyForm-container select:hover,
+.r-home-container .r-vacancy-form-item .vacancyForm-container textarea:hover{
+    border-color: #CCC;
+}
+
+.r-home-container .r-vacancy-form-item .vacancyForm-container input[type=text]:focus,
+.r-home-container .r-vacancy-form-item .vacancyForm-container select:focus,
+.r-home-container .r-vacancy-form-item .vacancyForm-container textarea:focus{
+     outline: none; 
+}
+
+.r-home-container .r-vacancy-form-item .vacancyForm-container label{
+    display: block;
+    padding: 8px 0 8px 0;
+    text-transform: uppercase;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.8);
+    font-size: 14px; 
+    cursor: pointer;       
+}
+
+.r-home-container .r-vacancy-form-item .vacancyForm-container button,
+.r-home-container .r-vacancy-form-item .vacancyForm-container input[type=submit]{    
+    padding: 10px 30px; 
+    border-radius: 10px;
+    height: 38px;  
+    text-align: center; 
+    margin-top:10px; 
+    cursor: pointer;
+    text-transform: uppercase;
+    color:white;
+    font-size: 15px;
+    font-weight: bold;
+    border-color:#2196F3;
+    background-color: #2196F3;   
+}
+
+.r-home-container .r-vacancy-form-item .vacancyForm-container button:hover,
+.r-home-container .r-vacancy-form-item .vacancyForm-container input[type=submit]:hover{
+    box-shadow: inset 0 20px 40px rgba(255,255,255,0.15);
+}
+
+.r-home-container .r-vacancy-form-item .vacancyForm-container button:focus,
+.r-home-container .r-vacancy-form-item .vacancyForm-container input[type=submit]:focus{
+    outline: none; 
+}
+
+
+
+.r-home-container .r-vacancy-form-item .vacancyForm-container .error_mark{
+    text-shadow: 0 1px 0 rgba(255,255,255,0.8);
+    color:red;
+    display: inline-block;
+}
+
+.r-home-container .r-vacancy-form-item .vacancyForm-container .error{
+    display: block;
+    padding: 0 0 5px 2px;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.8);
+    font-size: 12px;
+    color:red;
+} 
+
+.r-home-container .r-view-vacancies-item .view-container #offerDetails table,
+.r-home-container .r-view-vacancies-item .view-container #offerDetails table th,
+.r-home-container .r-view-vacancies-item .view-container #offerDetails table td,
+.r-home-container .r-view-vacancies-item .view-container #offerFormDisplay table,
+.r-home-container .r-view-vacancies-item .view-container #offerFormDisplay table th,
+.r-home-container .r-view-vacancies-item .view-container #offerFormDisplay table td {
+    border : 1px solid black;
+    border-collapse: collapse;
+}
+  
+.r-home-container .r-view-vacancies-item .view-container #offerDetails table th,
+.r-home-container .r-view-vacancies-item .view-container #offerDetails table td,
+.r-home-container .r-view-vacancies-item .view-container #offerFormDisplay table th,
+.r-home-container .r-view-vacancies-item .view-container #offerFormDisplay table td {
+    padding: 8px;
+    text-align: left;
+}
+
+@media screen and (max-width: 567px) 
+{
+    .r-home-container{
+        display:grid;
+        grid-template-columns: auto;
+        grid-template-rows:auto auto;
+    }
+
+    .r-home-container .menu-item
+    {
+        grid-column-start: 1; 
+        grid-column-end: 2;
+        grid-row-start: 1; 
+        grid-row-end: 2;
+    }
+
+    .r-home-container .r-vacancy-form-item,
+    .r-home-container .r-view-vacancies-item{
+        grid-column-start: 1; 
+        grid-column-end: 2;
+        grid-row-start: 2; 
+        grid-row-end: 3;
+        width:100%;
+        padding:5px; 
+        overflow: hidden;
+    }
+
+    .r-home-container .r-vacancy-form-item .vacancyForm-container{        
+        width:100%;
+        padding: 10px;
+    }
+
+    .r-home-container .r-view-vacancies-item .view-container{
+        width: 100%; 
+        overflow:auto; 
+        margin-bottom: 20%;
+    }
+
+    .r-home-container .r-view-vacancies-item .view-container #viewJobsTable{
+        width:100%;
+    }   
+
+    .r-view-vacancies-item .view-container #offerDetails,
+    .r-view-vacancies-item .view-container #offerFormDisplay{
+        width:100%;
+        margin:auto;
+        font-size: 12px; 
+        overflow:auto; 
+    }
+}

@@ -1,0 +1,365 @@
+.js-home-container{
+    display:grid;
+    grid-template-columns: 15% 20% auto 15%;
+    font-family: 'Roboto' , sans-serif, monospace;
+    background-color:#FAF0E6;
+}
+
+.js-home-container .menu-item
+{
+    grid-column-start: 2; 
+    grid-column-end: 3;
+    padding:20px;  
+    border-right: 1px solid #EBE6E2;
+    background-color:	#e2d3d1; /*rgb(244, 252, 244)*/
+    text-align: center;
+}
+
+.js-home-container .menu-item .menu-button{
+    color: white;
+    padding: 8px;
+    width:90%;
+    background-color: #6f6f6f;
+    background-color: #6f6f6f;
+    height: auto;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    text-align: center;
+    font-weight: bold;
+    margin:20px 0px;
+    text-transform: uppercase;
+}
+
+.js-home-container .menu-item .menu-button:hover {
+    box-shadow: inset 0 20px 40px rgba(255,255,255,0.15);
+    background-color: #000000;
+    border-color:#000000;
+}
+
+.js-home-container .menu-item .menu-button:focus {
+    outline: none; 
+} 
+
+.js-home-container .menu-item .offer-count{
+    display:inline-block;    
+    border: 2px solid blue;
+    border-radius: 10px;
+    padding:2px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.js-update-form-item,
+.js-view-form-item,
+.js-view-offer-form-item{
+    grid-column-start: 3; 
+    grid-column-end: 4;
+    width:100%;
+    padding:5px; 
+    background-color:rgb(247, 234, 210);
+    overflow: hidden;
+}
+
+.js-update-form-item h2,
+.js-view-form-item h2,
+.js-view-offer-form-item h2{    
+    font-size: 18px;           
+    text-transform: uppercase;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.8);
+    text-align: center;
+}
+
+.updateForm-container .section1 h2,
+.updateForm-container .section1 .score{
+    color: steelblue;
+    font-size: 14px;           
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.updateForm-container label{
+    display: block;
+    padding: 8px 0 8px 0;
+    text-transform: uppercase;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.8);
+    font-size: 14px; 
+    cursor: pointer;       
+}
+
+.updateForm-container button,
+.updateForm-container input[type=submit]{   
+    padding: 10px 30px; 
+    border-radius: 10px;
+    height: 38px;  
+    text-align: center; 
+    margin-top:10px; 
+    cursor: pointer;
+    text-transform: uppercase;
+    color:white;
+    font-size: 15px;
+    font-weight: bold;
+    border-color:#2196F3;
+    background-color: #2196F3;   
+}
+
+.updateForm-container button:hover,
+.updateForm-container input[type=submit]:hover{
+    box-shadow: inset 0 20px 40px rgba(255,255,255,0.15);
+}
+
+.updateForm-container button:focus,
+.updateForm-container input[type=submit]:focus{
+    outline: none; 
+} 
+
+.updateForm-container .skills-instruction{ 
+    padding: 8px;
+    font-size: 10px;
+}
+
+.updateForm-container input[type=text],
+.updateForm-container select,
+.updateForm-container textarea {
+    width: 90%;
+    padding: 5px;
+    border: 3px solid #ebe6e2;
+    border-radius: 10px;       
+    font-size: 14px;
+}
+
+.updateForm-container select{
+    cursor: pointer;
+}
+
+.updateForm-container input[type=text]:hover,
+.updateForm-container select:hover,
+.updateForm-container textarea:hover{
+    border-color: #CCC;
+}
+
+.updateForm-container input[type=text]:focus,
+.updateForm-container select:focus,
+.updateForm-container textarea:focus{
+     outline: none; 
+}
+
+.js-home-container .menu-item .active{
+    background-color: #000000;
+    border:#000000;
+}
+
+.js-home-container .show{
+    display:block;
+}
+
+.js-home-container .hide{
+    display:none;
+}
+
+.js-view-form-item table{
+    width: 70%;
+    padding:10px;
+    margin: auto;
+    overflow:hidden;    
+}
+
+.js-view-form-item table,
+.js-view-form-item table th,
+.js-view-form-item table td {
+    border : 1px solid black;
+    border-collapse: collapse;
+}
+  
+.js-view-form-item table th,
+.js-view-form-item table td {
+    padding: 8px;
+    text-align: left;
+}
+
+.js-view-form-item h4,
+.js-view-offer-form-item h4{
+    display: inline-block;
+    font-size: 15px;           
+    text-transform: uppercase;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.8);
+    text-align: left;    
+    border-bottom: 3px solid steelblue; 
+}
+
+.js-view-form-item h4,
+.js-view-offer-form-item h4{
+    
+    margin-left: 10%;
+}
+
+.js-view-offer-form-item .view-container
+{    
+    margin: auto; 
+    width:100%;
+    padding:10px;
+    overflow: auto;
+}
+
+/*Multiple form*/
+/* Style the form */
+.updateForm-container .error_mark{
+    text-shadow: 0 1px 0 rgba(255,255,255,0.8);
+    color:red;
+    display: inline-block;
+}
+
+.updateForm-container .error{
+    display: block;
+    padding: 0 0 5px 2px;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.8);
+    font-size: 12px;
+    color:red;
+}
+
+.updateForm-container {
+    box-shadow: -1px 3px 23px -8px rgba(0, 0, 0, 0.75),-2px 3px 23px -8px rgba(0,0,0,0.75);
+    background-color:rgb(247, 234, 210);
+    margin: auto;
+    padding: 40px;
+    width: 70%;
+  }  
+
+.updateForm-container h4{
+    display: inline-block;
+    font-size: 15px;           
+    text-transform: uppercase;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.8);
+    text-align: center;    
+    border-bottom: 3px solid steelblue; 
+    }
+
+/* Mark input boxes that gets an error on validation: */
+.updateForm-container input.invalid{
+    background-color: rgb(224, 193, 193);
+}
+.updateForm-container select.invalid{
+    background-color: rgb(224, 193, 193);
+}
+.updateForm-container textarea.invalid{
+    background-color: rgb(224, 193, 193);
+}
+  
+/* Hide all steps by default: */
+.updateForm-container .tab{
+    display: none;
+  }
+  
+/* Make circles that indicate the steps of the form: */
+.updateForm-container .step{
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+  }
+  
+/* Mark the active step: */
+.updateForm-container .step.active{
+    opacity: 1;
+  }
+  
+/* Mark the steps that are finished and valid: */
+.updateForm-container .step.finish{
+    background-color: #4CAF50;
+  }
+
+
+.js-view-offer-form-item .view-container #viewOfferTable{
+    width:100%;
+    margin:auto;
+    overflow:auto;
+}
+
+.js-view-offer-form-item .view-container #viewOfferTable a{
+    text-decoration: none;
+    color:#800080;
+    font-size: 15px;
+    cursor: pointer;        
+    text-transform: initial;
+}
+
+.js-view-offer-form-item .view-container #showOfferMessageHere{    
+    overflow:auto;
+    width:100%;
+}
+
+.js-view-offer-form-item .view-container #showOfferMessageHere table,
+.js-view-offer-form-item .view-container #showOfferMessageHere table th,
+.js-view-offer-form-item .view-container #showOfferMessageHere table td {
+    border : 1px solid black;
+    border-collapse: collapse;
+}
+
+.js-view-offer-form-item .view-container #showOfferMessageHere table {
+    padding: 8px;
+    overflow:auto;
+}
+ 
+  
+.js-view-offer-form-item .view-container #showOfferMessageHere table th,
+.js-view-offer-form-item .view-container #showOfferMessageHere table td {
+    padding: 8px;
+    text-align: left;
+}
+
+
+@media screen and (max-width: 567px) 
+{
+    .js-home-container{
+        display:grid;
+        grid-template-columns: 100%;
+        grid-template-rows:auto auto;
+    }
+
+    .js-home-container .menu-item
+    {
+        grid-column-start: 1; 
+        grid-column-end: 2;
+        grid-row-start: 1; 
+        grid-row-end: 2;
+        width:100%;
+        padding:5px; 
+        overflow: hidden;
+    }
+
+    .js-home-container .js-update-form-item,
+    .js-home-container .js-view-form-item,
+    .js-home-container .js-view-offer-form-item{
+        grid-column-start: 1; 
+        grid-column-end: 2;
+        grid-row-start: 2; 
+        grid-row-end: 3;
+        width:100%;
+        padding:5px; 
+        overflow: hidden;
+    }
+    .js-home-container .js-update-form-item .updateForm-container{ 
+        padding: 10px;
+    }
+
+    .js-home-container .js-view-form-item{
+        padding:10px; 
+        font-size: 14px; 
+    }
+
+    .js-home-container .js-view-offer-form-item .view-container{
+        overflow:auto; 
+        margin-bottom: 10%;
+    }
+    
+    .js-home-container .js-view-offer-form-item .view-container #viewOfferTable,
+    .js-view-offer-form-item .view-container #viewOfferTable,
+    .js-view-offer-form-item .view-container #userTable{
+        font-size: 12px; 
+        overflow:auto; 
+    }
+}
